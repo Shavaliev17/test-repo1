@@ -1,0 +1,31 @@
+class StringVar:
+    def __get__(self, instance, owner):
+        return instance.text
+    def __set__(self, instance, value):
+        instance.text = value
+    def __init__(self, text):
+        self.text = text
+
+a = StringVar('some text')
+a.string = 'Петербург'
+print(a.string)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
